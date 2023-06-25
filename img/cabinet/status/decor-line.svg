@@ -1,0 +1,7 @@
+<svg width="8" height="63" viewBox="0 0 8 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 5C4.55229 5 5 5.44771 5 6L5 56C5 56.5523 4.55228 57 4 57C3.44771 57 3 56.5523 3 56L3 6C3 5.44772 3.44772 5 4 5Z" fill="#F5F7FD"/>
+<circle cx="4" cy="4" r="4" fill="#F5F7FD"/>
+<circle cx="4" cy="4" r="2" fill="white"/>
+<circle cx="4" cy="59" r="4" fill="#F5F7FD"/>
+<circle cx="4" cy="59" r="2" fill="white"/>
+</svg>
