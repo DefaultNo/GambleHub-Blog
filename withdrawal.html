@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622155754">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<title>Вывод средств</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="main">
+			<div class="cabinet">
+				<div class="cabinet__mobile">
+					<div class="cabinet__overlay"></div>
+					<div class="cabinet__overlay-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="cabinet__navigation navigation-cabinet">
+					<div class="navigation-cabinet__wrapper">
+						<a href="#" class="navigation-cabinet__logo">
+							<img src="img/logo.svg" alt="Logo">
+						</a>
+						<nav class="navigation-aside">
+							<ul class="navigation-aside__list">
+								<li class="navigation-aside__item">
+									<a href="account.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0113 2.01416C11.1363 2.01416 10.2723 2.34716 9.60426 3.01416L2.29227 10.2951C1.90127 10.6861 1.90127 11.3421 2.29227 11.7331L4.01126 13.4521V17.0141C4.01126 19.2231 5.80226 21.0141 8.01126 21.0141H16.0112C18.2202 21.0141 20.0112 19.2231 20.0112 17.0141V13.4521L21.7292 11.7331C22.1202 11.3421 22.1202 10.6861 21.7292 10.2951C21.3902 9.95614 20.1482 8.70815 19.0112 7.57615V5.01415C19.0112 4.46215 18.5632 4.01415 18.0112 4.01415C17.4582 4.01415 17.0112 4.46215 17.0112 5.01415V5.60814C15.9412 4.54315 14.7413 3.33816 14.4173 3.01416C13.7493 2.34716 12.8853 2.01416 12.0113 2.01416ZM12.0113 4.01415C12.3743 4.01415 12.7343 4.14316 13.0113 4.42016C13.5453 4.95516 15.5603 6.96013 17.2923 8.70213C17.2993 8.70913 17.2853 8.72613 17.2923 8.73313C17.2983 8.73913 17.3173 8.72613 17.3233 8.73313C18.2383 9.65213 19.0393 10.4801 19.5733 11.0141L18.2922 12.2951C18.1052 12.4831 18.0112 12.7491 18.0112 13.0141V17.0141C18.0112 18.1191 17.1152 19.0141 16.0112 19.0141H8.01126C6.90626 19.0141 6.01126 18.1191 6.01126 17.0141V13.0141C6.01126 12.7491 5.91726 12.4831 5.72926 12.2951L4.44828 11.0141L11.0113 4.42016C11.2883 4.14316 11.6483 4.01415 12.0113 4.01415Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Аккаунт</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="chat.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0137 2.96777C6.51567 2.96777 2.01367 6.96877 2.01367 11.9678C2.01367 13.5398 2.45568 15.0678 3.29468 16.4048C3.74568 17.1238 3.78767 18.1468 3.10767 19.5298C2.79867 20.1578 3.22368 20.9018 3.91968 20.9678C5.27668 21.0968 6.42267 20.8688 7.98267 20.2178C9.22467 20.7018 10.6297 20.9678 12.0137 20.9678C17.5117 20.9678 22.0137 16.9658 22.0137 11.9678C22.0137 6.96877 17.5117 2.96777 12.0137 2.96777ZM12.0137 4.96777C16.4567 4.96777 20.0137 8.12977 20.0137 11.9678C20.0137 15.8058 16.4567 18.9678 12.0137 18.9678C10.7347 18.9678 9.50067 18.7138 8.38867 18.2178C8.13167 18.1028 7.83368 18.1048 7.57568 18.2178C6.65568 18.6208 6.13466 18.8408 5.45166 18.9368C5.82966 17.6318 5.55167 16.2498 4.98267 15.3428C4.34067 14.3198 4.01367 13.1578 4.01367 11.9678C4.01367 8.12977 7.57067 4.96777 12.0137 4.96777ZM8.01367 10.9678C7.46167 10.9678 7.01367 11.4148 7.01367 11.9678C7.01367 12.5198 7.46167 12.9678 8.01367 12.9678C8.56567 12.9678 9.01367 12.5198 9.01367 11.9678C9.01367 11.4148 8.56567 10.9678 8.01367 10.9678ZM12.0137 10.9678C11.4617 10.9678 11.0137 11.4148 11.0137 11.9678C11.0137 12.5198 11.4617 12.9678 12.0137 12.9678C12.5657 12.9678 13.0137 12.5198 13.0137 11.9678C13.0137 11.4148 12.5657 10.9678 12.0137 10.9678ZM16.0137 10.9678C15.4617 10.9678 15.0137 11.4148 15.0137 11.9678C15.0137 12.5198 15.4617 12.9678 16.0137 12.9678C16.5657 12.9678 17.0137 12.5198 17.0137 11.9678C17.0137 11.4148 16.5657 10.9678 16.0137 10.9678Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Общий Чат</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="income.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0142 1.99902C10.6352 1.99902 9.52117 2.88803 9.17017 4.15503C8.26517 4.40603 7.41615 5.23102 7.20215 5.99902H6.01416C3.80516 5.99902 2.01416 7.79002 2.01416 9.99902V17.999C2.01416 20.208 3.80516 21.999 6.01416 21.999H18.0142C20.2232 21.999 22.0142 20.208 22.0142 17.999V9.99902C22.0142 7.79002 20.2232 5.99902 18.0142 5.99902H16.8892C16.5142 5.09702 15.7942 4.37502 14.8892 4.12402C14.5382 2.85702 13.3932 1.99902 12.0142 1.99902ZM12.0142 3.99902C12.5662 3.99902 13.0142 4.44702 13.0142 4.99902C13.0142 5.55102 13.4622 5.99902 14.0142 5.99902C14.5662 5.99902 15.0142 6.44702 15.0142 6.99902C15.0142 7.55102 14.5662 7.99902 14.0142 7.99902H10.0142C9.46216 7.99902 9.01416 7.55102 9.01416 6.99902C9.01416 6.44702 9.46216 5.99902 10.0142 5.99902C10.5662 5.99902 11.0142 5.55102 11.0142 4.99902C11.0142 4.44702 11.4622 3.99902 12.0142 3.99902ZM6.01416 7.99902H7.20215C7.61215 9.23202 8.74616 9.99902 10.0142 9.99902H14.0142C15.2822 9.99902 16.3492 9.27702 16.8582 7.99902H18.0142C19.1192 7.99902 20.0142 8.89402 20.0142 9.99902V17.999C20.0142 19.104 19.1192 19.999 18.0142 19.999H6.01416C4.90916 19.999 4.01416 19.104 4.01416 17.999V9.99902C4.01416 8.89402 4.90916 7.99902 6.01416 7.99902ZM16.0142 10.999C15.4622 10.999 15.0142 11.447 15.0142 11.999V16.999C15.0142 17.551 15.4622 17.999 16.0142 17.999C16.5662 17.999 17.0142 17.551 17.0142 16.999V11.999C17.0142 11.447 16.5662 10.999 16.0142 10.999ZM12.0142 12.999C11.4622 12.999 11.0142 13.447 11.0142 13.999V16.999C11.0142 17.551 11.4622 17.999 12.0142 17.999C12.5662 17.999 13.0142 17.551 13.0142 16.999V13.999C13.0142 13.447 12.5662 12.999 12.0142 12.999ZM8.01416 14.999C7.46216 14.999 7.01416 15.447 7.01416 15.999V16.999C7.01416 17.551 7.46216 17.999 8.01416 17.999C8.56616 17.999 9.01416 17.551 9.01416 16.999V15.999C9.01416 15.447 8.56616 14.999 8.01416 14.999Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мои Доходы</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="deposit.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+													<g>
+														<g fill="#231F20">
+															<path d="m367.2,346.9c-5.8,0-10.4,4.7-10.4,10.4 0,5.8 4.7,10.4 10.4,10.4h20v27.7c0,5.8 4.7,10.4 10.4,10.4 5.8,0 10.4-4.7 10.4-10.4v-27.7h20c5.8,0 10.4-4.7 10.4-10.4 0-5.8-4.7-10.4-10.4-10.4h-20v-225.9h20c5.8,0 10.4-4.7 10.4-10.4s-4.7-10.4-10.4-10.4h-20v-27.7c0-5.8-4.7-10.4-10.4-10.4-5.8,0-10.4,4.7-10.4,10.4v27.7h-20c-5.8,0-10.4,4.7-10.4,10.4s4.7,10.4 10.4,10.4h20v225.9h-20z" />
+															<path d="m189.5,352.5c65.4,0 118.6-53.2 118.6-118.6 0-65.4-53.2-118.6-118.6-118.6-65.4-1.42109e-14-118.5,53.2-118.5,118.6 0,65.4 53.1,118.6 118.5,118.6zm10.5-215.8c45.6,4.9 81.9,41.2 86.7,86.7h-86.7v-86.7zm0,107.6h86.7c-4.9,45.6-41.2,81.9-86.7,86.7v-86.7zm-20.9-107.6v86.7h-86.7c4.8-45.5 41.1-81.8 86.7-86.7zm0,107.6v86.7c-45.6-4.9-81.9-41.2-86.7-86.7h86.7z" />
+															<path d="m480.7,11h-449.4c-5.8,0-10.4,4.7-10.4,10.4v425c0,5.8 4.7,10.4 10.4,10.4h42.1v33.8c0,5.8 4.7,10.4 10.4,10.4h85.3c5.8,0 10.4-4.7 10.4-10.4v-33.8h152.8v33.8c0,5.8 4.7,10.4 10.4,10.4h85.3c5.8,0 10.4-4.7 10.4-10.4v-33.8h42.1c5.8,0 10.4-4.7 10.4-10.4v-425c0.2-5.7-4.5-10.4-10.2-10.4zm-321.9,469.1h-64.5v-23.3h64.5v23.3zm258.9,0h-64.4v-23.3h64.4v23.3zm52.5-44.1h-428.4v-404.1h428.5v404.1z" />
+														</g>
+													</g>
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мои Депозиты</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="status.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.281 1.99248C11.8873 1.87848 11.4246 2.00847 11.156 2.43047C10.281 3.80547 5.03107 12.0555 4.15597 13.4305C3.73237 14.0955 4.21067 14.9615 4.99977 14.9615H10.9998V20.9615C10.9998 21.9615 12.3064 22.3365 12.8436 21.4925L19.8436 10.4925C20.2672 9.82749 19.7889 8.96148 18.9998 8.96148H12.9998V2.96148C12.9998 2.46148 12.6748 2.10748 12.281 1.99248ZM10.9998 6.39947V9.96149C10.9998 10.5135 11.4475 10.9615 11.9998 10.9615H17.1873L12.9998 17.5235V13.9615C12.9998 13.4095 12.5521 12.9615 11.9998 12.9615H6.81227C7.95987 11.1585 9.46237 8.81447 10.9998 6.39947Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мой Статус</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="points.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.99916 2.99072C5.95016 2.99072 5.72816 3.02773 5.65516 3.05373C5.39516 3.14473 5.19915 3.32073 5.09315 3.55373L2.18415 9.38572C2.18415 9.38572 2.00616 9.62672 1.99916 9.99372C1.99216 10.3607 2.26216 10.6537 2.26216 10.6537L11.2182 21.6237C11.6181 22.1127 12.3802 22.1127 12.7802 21.6237C13.0592 21.2827 21.7712 10.6047 21.7712 10.6047C21.7712 10.6047 21.9932 10.3227 21.9992 9.99372C22.0062 9.66472 21.8312 9.43174 21.8312 9.43174L18.9052 3.55373C18.7992 3.32073 18.6031 3.14473 18.3431 3.05373C18.2701 3.02773 18.0492 2.99072 17.9992 2.99072H5.99916ZM7.40516 4.99173H16.5931L15.1871 8.99372H8.81214L7.40516 4.99173ZM5.84315 6.55472L6.71815 8.99372H4.62416L5.84315 6.55472ZM18.1552 6.55472L19.3742 8.99372H17.2802L18.1552 6.55472ZM5.12416 10.9937H7.40516L9.15516 15.9337L5.12416 10.9937ZM9.53016 10.9937H14.4681L11.9992 17.9977L9.53016 10.9937ZM16.5931 10.9937H18.8742C17.9162 12.1647 16.5261 13.8797 14.8431 15.9337L16.5931 10.9937Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Поинты/Вывод</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="withdrawal.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.01367 3.9978C3.35667 3.9978 2.01367 5.3408 2.01367 6.9978V16.9978C2.01367 18.6548 3.35667 19.9978 5.01367 19.9978H19.0137C20.6707 19.9978 22.0137 18.6548 22.0137 16.9978V6.9978C22.0137 5.3408 20.6707 3.9978 19.0137 3.9978H5.01367ZM5.01367 5.9978H19.0137C19.5657 5.9978 20.0137 6.4458 20.0137 6.9978V13.9978H4.01367V6.9978C4.01367 6.4458 4.46167 5.9978 5.01367 5.9978ZM15.0137 7.9978C14.4617 7.9978 14.0137 8.4458 14.0137 8.9978C14.0137 9.5498 14.4617 9.9978 15.0137 9.9978H17.0137C17.5657 9.9978 18.0137 9.5498 18.0137 8.9978C18.0137 8.4458 17.5657 7.9978 17.0137 7.9978H15.0137ZM4.01367 15.9978H20.0137V16.9978C20.0137 17.5498 19.5657 17.9978 19.0137 17.9978H5.01367C4.46167 17.9978 4.01367 17.5498 4.01367 16.9978V15.9978Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">История операций</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="settings.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.96802 2.45522C7.55002 2.90522 6.32702 3.63923 5.24902 4.64323C4.91602 4.95323 4.81403 5.46123 5.03003 5.86123C5.83103 7.34223 4.99302 8.92723 3.18602 9.01823C2.74402 9.04023 2.35302 9.36823 2.24902 9.79923C2.07002 10.5442 1.99902 11.1682 1.99902 11.9862C1.99902 12.6732 2.07302 13.4512 2.21802 14.1432C2.30802 14.5752 2.68402 14.8862 3.12402 14.9242C4.94202 15.0812 5.84203 16.4682 5.03003 18.2362C4.85003 18.6292 4.93202 19.0992 5.24902 19.3932C6.31102 20.3752 7.53102 21.0682 8.96802 21.5182C9.37802 21.6462 9.84102 21.4912 10.093 21.1432C11.205 19.6042 12.818 19.5992 13.874 21.1432C14.123 21.5062 14.579 21.6812 14.999 21.5492C16.386 21.1122 17.678 20.3692 18.749 19.3932C19.079 19.0922 19.166 18.6052 18.968 18.2052C18.136 16.5262 19.093 14.9852 20.811 14.9552C21.267 14.9472 21.673 14.6482 21.78 14.2052C21.953 13.4882 21.999 12.8642 21.999 11.9862C21.999 11.2322 21.91 10.4892 21.749 9.76823C21.647 9.31123 21.248 8.98723 20.78 8.98623C19.089 8.98323 18.141 7.32123 18.968 5.86123C19.198 5.45523 19.126 4.95723 18.78 4.64323C17.69 3.65323 16.361 2.87922 14.968 2.45522C14.54 2.32522 14.085 2.48523 13.843 2.86123C12.877 4.36223 11.073 4.38823 10.124 2.89323C9.88102 2.50923 9.40002 2.31822 8.96802 2.45522ZM15.046 4.57923C15.729 4.86523 16.268 5.16423 16.887 5.63323C16.161 7.93023 17.392 10.3162 19.942 10.8972C20.005 11.3102 19.999 11.5602 19.999 11.9862C19.999 12.4952 20.006 12.6742 19.948 13.0422C17.409 13.5682 16.153 15.8872 16.86 18.3382C16.252 18.7792 15.817 19.0852 15.054 19.3802C13.262 17.5562 10.774 17.4762 8.94403 19.3922C8.23003 19.0782 7.68104 18.7992 7.12604 18.3302C7.81404 15.8412 6.65103 13.6922 4.06903 13.0402C3.95403 12.5842 4.00002 11.2962 4.06602 10.9052C6.73602 10.2652 7.78803 7.90223 7.12503 5.62623C7.71103 5.18523 8.23803 4.86423 8.92303 4.58623C10.648 6.34123 13.238 6.51623 15.046 4.57923ZM11.999 7.98623C9.79002 7.98623 7.99902 9.77723 7.99902 11.9862C7.99902 14.1962 9.79002 15.9862 11.999 15.9862C14.208 15.9862 15.999 14.1962 15.999 11.9862C15.999 9.77723 14.208 7.98623 11.999 7.98623ZM11.999 9.98623C13.104 9.98623 13.999 10.8822 13.999 11.9862C13.999 13.0912 13.104 13.9862 11.999 13.9862C10.894 13.9862 9.99902 13.0912 9.99902 11.9862C9.99902 10.8822 10.894 9.98623 11.999 9.98623Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Настройки</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="tickets.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.99072 1.99805C7.43842 1.99805 6.99072 2.44605 6.99072 2.99805C4.78162 2.99805 2.99072 4.78905 2.99072 6.99805V16.998C2.99072 19.207 4.78162 20.998 6.99072 20.998H16.9907C19.1997 20.998 20.9907 19.207 20.9907 16.998V6.99805C20.9907 4.78905 19.1997 2.99805 16.9907 2.99805C16.9907 2.44605 16.5427 1.99805 15.9907 1.99805C15.4387 1.99805 14.9907 2.44605 14.9907 2.99805H11.9907H8.99072C8.99072 2.44605 8.54302 1.99805 7.99072 1.99805ZM6.99072 4.99805C6.99072 5.39005 6.99072 5.82405 6.99072 5.99805C6.99072 7.68705 8.48482 8.99805 10.2717 8.99805H13.7097C15.4967 8.99805 16.9907 7.68705 16.9907 5.99805C16.9907 5.82405 16.9907 5.41605 16.9907 4.99805C18.0957 4.99805 18.9907 5.89305 18.9907 6.99805V16.998C18.9907 18.103 18.0957 18.998 16.9907 18.998H6.99072C5.88612 18.998 4.99072 18.103 4.99072 16.998V6.99805C4.99072 5.89305 5.88612 4.99805 6.99072 4.99805ZM8.99072 4.99805H11.9907H14.9907C14.9907 5.41605 14.9907 5.82405 14.9907 5.99805C14.9907 6.51805 14.4467 6.99805 13.7097 6.99805H10.2717C9.53442 6.99805 8.99072 6.51805 8.99072 5.99805C8.99072 5.82405 8.99072 5.39005 8.99072 4.99805ZM11.9907 10.998C11.4387 10.998 10.9907 11.446 10.9907 11.998V12.998H9.99072C9.43842 12.998 8.99072 13.446 8.99072 13.998C8.99072 14.55 9.43842 14.998 9.99072 14.998H10.9907V15.998C10.9907 16.55 11.4387 16.998 11.9907 16.998C12.5427 16.998 12.9907 16.55 12.9907 15.998V14.998H13.9907C14.5427 14.998 14.9907 14.55 14.9907 13.998C14.9907 13.446 14.5427 12.998 13.9907 12.998H12.9907V11.998C12.9907 11.446 12.5427 10.998 11.9907 10.998Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Тикеты</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item navigation-aside__item_vote">
+									<a href="vote.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0137 1.99902C6.49067 1.99902 2.01367 6.47602 2.01367 11.999C2.01367 17.522 6.49067 21.999 12.0137 21.999C17.0937 21.999 21.3577 18.191 21.9517 13.187C22.0157 12.638 21.6246 12.127 21.0756 12.061C20.5277 11.997 20.0157 12.388 19.9517 12.937C19.4767 16.937 16.0777 19.999 12.0137 19.999C7.59567 19.999 4.01367 16.417 4.01367 11.999C4.01367 7.58101 7.59567 3.99902 12.0137 3.99902C12.9367 3.99902 13.8507 4.16601 14.7017 4.46801C15.2217 4.65201 15.7667 4.36301 15.9517 3.84301C16.1357 3.32202 15.8777 2.74603 15.3577 2.56103C14.2937 2.18403 13.1647 1.99902 12.0137 1.99902ZM21.0137 3.99902C20.7577 3.99902 20.4897 4.08903 20.2947 4.28003L11.5757 12.874C11.3187 13.127 11.0597 13.078 10.8577 12.78L9.85766 11.311C9.55166 10.86 8.90967 10.729 8.45167 11.03C7.99267 11.331 7.86367 11.954 8.16967 12.405L9.16967 13.874C10.0707 15.203 11.8337 15.379 12.9827 14.249L21.7326 5.68701C22.1226 5.30301 22.1226 4.66403 21.7326 4.28003C21.5376 4.08803 21.2697 3.99902 21.0137 3.99902Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">
+											Голосование
+											<span>3</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="navigation-aside__item">
+									<a href="index.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.4343 2.06599L6.99731 3.87849C6.43131 4.06699 6.02832 4.62589 6.02832 5.22219V19.9097H5.02832C4.47632 19.9097 4.02832 20.3574 4.02832 20.9097C4.02832 21.462 4.47632 21.9097 5.02832 21.9097H17.0283H19.0283C19.5803 21.9097 20.0283 21.462 20.0283 20.9097C20.0283 20.3574 19.5803 19.9097 19.0283 19.9097H18.0283V5.90969C18.0283 4.25279 16.6853 2.90969 15.0283 2.90969L13.9883 2.91288C13.8433 2.20348 13.1133 1.83959 12.4343 2.06599ZM12.0283 4.31599C12.0283 5.21589 12.0283 8.09189 12.0283 10.9097C11.4763 10.9097 11.0283 11.3574 11.0283 11.9097C11.0283 12.462 11.4763 12.9097 12.0283 12.9097C12.0283 15.9217 12.0283 19.0136 12.0283 19.9097H8.02832V5.65969L12.0283 4.31599ZM14.0283 4.90969H15.0283C15.5803 4.90969 16.0283 5.35739 16.0283 5.90969V19.9097H14.0283C14.0283 17.9905 14.0283 7.72499 14.0283 4.90969Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Выход</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="cabinet__main main-cabinet">
+					<div class="main-cabinet__account withdrawal">
+						<div class="withdrawal__header header-cabinet">
+							<div class="header-cabinet__burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="header-cabinet__main">
+								<h2 class="header-cabinet__title">Вывод средств</h2>
+								<div class="header-cabinet__image _ibg">
+									<img src="img/test.png" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="withdrawal__body">
+							<div class="withdrawal__transactions transactions-withdrawal">
+								<div class="transactions-withdrawal__wrapper">
+									<div data-one-select class="transactions-withdrawal__header header-transactions">
+										<div class="block-withdrawal__selectors selectors-block">
+											<div class="selectors-block__selectors-wrapper">
+												<div class="selectors-block__selector">
+													<div class="selectors-block__selector-label">Тип транзакции</div>
+													<select data-scroll="150" name="form[]" class="header-transactions__type-select">
+														<option value="1" selected>Все транзакции</option>
+														<option value="2">Другие транзакции</option>
+														<option value="3">Другие транзакции</option>
+														<option value="4">Другие транзакции</option>
+													</select>
+												</div>
+												<div class="selectors-block__selector">
+													<div class="selectors-block__selector-label">День:</div>
+													<select data-scroll="150" name="form[]" class="form">
+														<option value="1" selected>1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+													</select>
+												</div>
+												<div class="selectors-block__selector">
+													<div class="selectors-block__selector-label">Месяц:</div>
+													<select data-scroll="150" name="form[]" class="form">
+														<option value="1" selected>Январь</option>
+														<option value="2">Февраль</option>
+														<option value="3">Март</option>
+														<option value="4">Апрель</option>
+														<option value="5">Май</option>
+														<option value="6">Июнь</option>
+														<option value="7">Июль</option>
+														<option value="8">Август</option>
+														<option value="9">Сентябрь</option>
+														<option value="10">Октябрь</option>
+														<option value="11">Ноябрь</option>
+														<option value="12">Декабрь</option>
+													</select>
+												</div>
+												<div class="selectors-block__selector">
+													<div class="selectors-block__selector-label">Год:</div>
+													<select data-scroll="150" name="form[]" class="form">
+														<option value="1" selected>2021</option>
+														<option value="2">2022</option>
+														<option value="3">2023</option>
+													</select>
+												</div>
+											</div>
+											<button class="selectors-block__selectors-button red-button">
+												Go
+											</button>
+										</div>
+									</div>
+									<div class="transactions-withdrawal__body">
+										<div class="transactions-withdrawal__titles">
+											<div class="transactions-withdrawal__title">Дата</div>
+											<div class="transactions-withdrawal__title">Сумма, Количество, Промо</div>
+											<div class="transactions-withdrawal__title">Тип операции</div>
+											<div class="transactions-withdrawal__title">Статус</div>
+											<div class="transactions-withdrawal__title">Платежная система</div>
+										</div>
+										<div class="transactions-withdrawal__items">
+											<div class="transactions-withdrawal__item">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>10.99$</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Вывод средств</span>
+												</div>
+												<div class="transactions-withdrawal__status completed">Выполнен</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+											<div class="transactions-withdrawal__item transactions-withdrawal__item_bonus">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>10$</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Бонусы</span>
+												</div>
+												<div class="transactions-withdrawal__status">Выполняется</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+											<div class="transactions-withdrawal__item transactions-withdrawal__item_promo">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>PROMO7</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Промокоды</span>
+												</div>
+												<div class="transactions-withdrawal__status">Выполняется</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+											<div class="transactions-withdrawal__item transactions-withdrawal__item_activation">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>1</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Активация</span>
+												</div>
+												<div class="transactions-withdrawal__status">Выполняется</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+											<div class="transactions-withdrawal__item transactions-withdrawal__item_exchange">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>100 поинтов на 1$</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Обмен поинтов</span>
+												</div>
+												<div class="transactions-withdrawal__status">Выполняется</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+											<div class="transactions-withdrawal__item transactions-withdrawal__item_completed">
+												<div class="transactions-withdrawal__date">12 Feb, 20:18:12</div>
+												<div class="transactions-withdrawal__value">
+													<span>10.99$</span>
+												</div>
+												<div class="transactions-withdrawal__withdraw">
+													<span>Завершенные</span>
+												</div>
+												<div class="transactions-withdrawal__status">Выполняется</div>
+												<div class="transactions-withdrawal__payment">
+													<span class="transactions-withdrawal__payment-icon">
+														<img src="img/main/blog/paypa.svg" alt="PayPal">
+													</span>
+													PayPal
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="transactions-withdrawal__pagination pagination">
+									<ul class="pagination__list">
+										<li class="pagination__item disabled">
+											<a href="#" class="pagination__link">1</a>
+										</li>
+										<li class="pagination__item">
+											<a href="#" class="pagination__link">2</a>
+										</li>
+										<li class="pagination__item">
+											<a href="#" class="pagination__link">3</a>
+										</li>
+										<li class="pagination__item">
+											<a href="#" class="pagination__link">...</a>
+										</li>
+										<li class="pagination__item">
+											<a href="#" class="pagination__link">20</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20230622155754"></script>
+</body>
+
+</html>

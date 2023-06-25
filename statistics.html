@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622155754">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<title>Statistics</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="main">
+			<div class="cabinet">
+				<div class="cabinet__mobile">
+					<div class="cabinet__overlay"></div>
+					<div class="cabinet__overlay-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="cabinet__navigation navigation-cabinet">
+					<div class="navigation-cabinet__wrapper">
+						<a href="#" class="navigation-cabinet__logo">
+							<img src="img/logo.svg" alt="Logo">
+						</a>
+						<nav class="navigation-aside">
+							<ul class="navigation-aside__list">
+								<li class="navigation-aside__item">
+									<a href="account.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0113 2.01416C11.1363 2.01416 10.2723 2.34716 9.60426 3.01416L2.29227 10.2951C1.90127 10.6861 1.90127 11.3421 2.29227 11.7331L4.01126 13.4521V17.0141C4.01126 19.2231 5.80226 21.0141 8.01126 21.0141H16.0112C18.2202 21.0141 20.0112 19.2231 20.0112 17.0141V13.4521L21.7292 11.7331C22.1202 11.3421 22.1202 10.6861 21.7292 10.2951C21.3902 9.95614 20.1482 8.70815 19.0112 7.57615V5.01415C19.0112 4.46215 18.5632 4.01415 18.0112 4.01415C17.4582 4.01415 17.0112 4.46215 17.0112 5.01415V5.60814C15.9412 4.54315 14.7413 3.33816 14.4173 3.01416C13.7493 2.34716 12.8853 2.01416 12.0113 2.01416ZM12.0113 4.01415C12.3743 4.01415 12.7343 4.14316 13.0113 4.42016C13.5453 4.95516 15.5603 6.96013 17.2923 8.70213C17.2993 8.70913 17.2853 8.72613 17.2923 8.73313C17.2983 8.73913 17.3173 8.72613 17.3233 8.73313C18.2383 9.65213 19.0393 10.4801 19.5733 11.0141L18.2922 12.2951C18.1052 12.4831 18.0112 12.7491 18.0112 13.0141V17.0141C18.0112 18.1191 17.1152 19.0141 16.0112 19.0141H8.01126C6.90626 19.0141 6.01126 18.1191 6.01126 17.0141V13.0141C6.01126 12.7491 5.91726 12.4831 5.72926 12.2951L4.44828 11.0141L11.0113 4.42016C11.2883 4.14316 11.6483 4.01415 12.0113 4.01415Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Аккаунт</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="chat.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0137 2.96777C6.51567 2.96777 2.01367 6.96877 2.01367 11.9678C2.01367 13.5398 2.45568 15.0678 3.29468 16.4048C3.74568 17.1238 3.78767 18.1468 3.10767 19.5298C2.79867 20.1578 3.22368 20.9018 3.91968 20.9678C5.27668 21.0968 6.42267 20.8688 7.98267 20.2178C9.22467 20.7018 10.6297 20.9678 12.0137 20.9678C17.5117 20.9678 22.0137 16.9658 22.0137 11.9678C22.0137 6.96877 17.5117 2.96777 12.0137 2.96777ZM12.0137 4.96777C16.4567 4.96777 20.0137 8.12977 20.0137 11.9678C20.0137 15.8058 16.4567 18.9678 12.0137 18.9678C10.7347 18.9678 9.50067 18.7138 8.38867 18.2178C8.13167 18.1028 7.83368 18.1048 7.57568 18.2178C6.65568 18.6208 6.13466 18.8408 5.45166 18.9368C5.82966 17.6318 5.55167 16.2498 4.98267 15.3428C4.34067 14.3198 4.01367 13.1578 4.01367 11.9678C4.01367 8.12977 7.57067 4.96777 12.0137 4.96777ZM8.01367 10.9678C7.46167 10.9678 7.01367 11.4148 7.01367 11.9678C7.01367 12.5198 7.46167 12.9678 8.01367 12.9678C8.56567 12.9678 9.01367 12.5198 9.01367 11.9678C9.01367 11.4148 8.56567 10.9678 8.01367 10.9678ZM12.0137 10.9678C11.4617 10.9678 11.0137 11.4148 11.0137 11.9678C11.0137 12.5198 11.4617 12.9678 12.0137 12.9678C12.5657 12.9678 13.0137 12.5198 13.0137 11.9678C13.0137 11.4148 12.5657 10.9678 12.0137 10.9678ZM16.0137 10.9678C15.4617 10.9678 15.0137 11.4148 15.0137 11.9678C15.0137 12.5198 15.4617 12.9678 16.0137 12.9678C16.5657 12.9678 17.0137 12.5198 17.0137 11.9678C17.0137 11.4148 16.5657 10.9678 16.0137 10.9678Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Общий Чат</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="income.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0142 1.99902C10.6352 1.99902 9.52117 2.88803 9.17017 4.15503C8.26517 4.40603 7.41615 5.23102 7.20215 5.99902H6.01416C3.80516 5.99902 2.01416 7.79002 2.01416 9.99902V17.999C2.01416 20.208 3.80516 21.999 6.01416 21.999H18.0142C20.2232 21.999 22.0142 20.208 22.0142 17.999V9.99902C22.0142 7.79002 20.2232 5.99902 18.0142 5.99902H16.8892C16.5142 5.09702 15.7942 4.37502 14.8892 4.12402C14.5382 2.85702 13.3932 1.99902 12.0142 1.99902ZM12.0142 3.99902C12.5662 3.99902 13.0142 4.44702 13.0142 4.99902C13.0142 5.55102 13.4622 5.99902 14.0142 5.99902C14.5662 5.99902 15.0142 6.44702 15.0142 6.99902C15.0142 7.55102 14.5662 7.99902 14.0142 7.99902H10.0142C9.46216 7.99902 9.01416 7.55102 9.01416 6.99902C9.01416 6.44702 9.46216 5.99902 10.0142 5.99902C10.5662 5.99902 11.0142 5.55102 11.0142 4.99902C11.0142 4.44702 11.4622 3.99902 12.0142 3.99902ZM6.01416 7.99902H7.20215C7.61215 9.23202 8.74616 9.99902 10.0142 9.99902H14.0142C15.2822 9.99902 16.3492 9.27702 16.8582 7.99902H18.0142C19.1192 7.99902 20.0142 8.89402 20.0142 9.99902V17.999C20.0142 19.104 19.1192 19.999 18.0142 19.999H6.01416C4.90916 19.999 4.01416 19.104 4.01416 17.999V9.99902C4.01416 8.89402 4.90916 7.99902 6.01416 7.99902ZM16.0142 10.999C15.4622 10.999 15.0142 11.447 15.0142 11.999V16.999C15.0142 17.551 15.4622 17.999 16.0142 17.999C16.5662 17.999 17.0142 17.551 17.0142 16.999V11.999C17.0142 11.447 16.5662 10.999 16.0142 10.999ZM12.0142 12.999C11.4622 12.999 11.0142 13.447 11.0142 13.999V16.999C11.0142 17.551 11.4622 17.999 12.0142 17.999C12.5662 17.999 13.0142 17.551 13.0142 16.999V13.999C13.0142 13.447 12.5662 12.999 12.0142 12.999ZM8.01416 14.999C7.46216 14.999 7.01416 15.447 7.01416 15.999V16.999C7.01416 17.551 7.46216 17.999 8.01416 17.999C8.56616 17.999 9.01416 17.551 9.01416 16.999V15.999C9.01416 15.447 8.56616 14.999 8.01416 14.999Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мои Доходы</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="deposit.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+													<g>
+														<g fill="#231F20">
+															<path d="m367.2,346.9c-5.8,0-10.4,4.7-10.4,10.4 0,5.8 4.7,10.4 10.4,10.4h20v27.7c0,5.8 4.7,10.4 10.4,10.4 5.8,0 10.4-4.7 10.4-10.4v-27.7h20c5.8,0 10.4-4.7 10.4-10.4 0-5.8-4.7-10.4-10.4-10.4h-20v-225.9h20c5.8,0 10.4-4.7 10.4-10.4s-4.7-10.4-10.4-10.4h-20v-27.7c0-5.8-4.7-10.4-10.4-10.4-5.8,0-10.4,4.7-10.4,10.4v27.7h-20c-5.8,0-10.4,4.7-10.4,10.4s4.7,10.4 10.4,10.4h20v225.9h-20z" />
+															<path d="m189.5,352.5c65.4,0 118.6-53.2 118.6-118.6 0-65.4-53.2-118.6-118.6-118.6-65.4-1.42109e-14-118.5,53.2-118.5,118.6 0,65.4 53.1,118.6 118.5,118.6zm10.5-215.8c45.6,4.9 81.9,41.2 86.7,86.7h-86.7v-86.7zm0,107.6h86.7c-4.9,45.6-41.2,81.9-86.7,86.7v-86.7zm-20.9-107.6v86.7h-86.7c4.8-45.5 41.1-81.8 86.7-86.7zm0,107.6v86.7c-45.6-4.9-81.9-41.2-86.7-86.7h86.7z" />
+															<path d="m480.7,11h-449.4c-5.8,0-10.4,4.7-10.4,10.4v425c0,5.8 4.7,10.4 10.4,10.4h42.1v33.8c0,5.8 4.7,10.4 10.4,10.4h85.3c5.8,0 10.4-4.7 10.4-10.4v-33.8h152.8v33.8c0,5.8 4.7,10.4 10.4,10.4h85.3c5.8,0 10.4-4.7 10.4-10.4v-33.8h42.1c5.8,0 10.4-4.7 10.4-10.4v-425c0.2-5.7-4.5-10.4-10.2-10.4zm-321.9,469.1h-64.5v-23.3h64.5v23.3zm258.9,0h-64.4v-23.3h64.4v23.3zm52.5-44.1h-428.4v-404.1h428.5v404.1z" />
+														</g>
+													</g>
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мои Депозиты</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="status.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.281 1.99248C11.8873 1.87848 11.4246 2.00847 11.156 2.43047C10.281 3.80547 5.03107 12.0555 4.15597 13.4305C3.73237 14.0955 4.21067 14.9615 4.99977 14.9615H10.9998V20.9615C10.9998 21.9615 12.3064 22.3365 12.8436 21.4925L19.8436 10.4925C20.2672 9.82749 19.7889 8.96148 18.9998 8.96148H12.9998V2.96148C12.9998 2.46148 12.6748 2.10748 12.281 1.99248ZM10.9998 6.39947V9.96149C10.9998 10.5135 11.4475 10.9615 11.9998 10.9615H17.1873L12.9998 17.5235V13.9615C12.9998 13.4095 12.5521 12.9615 11.9998 12.9615H6.81227C7.95987 11.1585 9.46237 8.81447 10.9998 6.39947Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Мой Статус</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="points.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.99916 2.99072C5.95016 2.99072 5.72816 3.02773 5.65516 3.05373C5.39516 3.14473 5.19915 3.32073 5.09315 3.55373L2.18415 9.38572C2.18415 9.38572 2.00616 9.62672 1.99916 9.99372C1.99216 10.3607 2.26216 10.6537 2.26216 10.6537L11.2182 21.6237C11.6181 22.1127 12.3802 22.1127 12.7802 21.6237C13.0592 21.2827 21.7712 10.6047 21.7712 10.6047C21.7712 10.6047 21.9932 10.3227 21.9992 9.99372C22.0062 9.66472 21.8312 9.43174 21.8312 9.43174L18.9052 3.55373C18.7992 3.32073 18.6031 3.14473 18.3431 3.05373C18.2701 3.02773 18.0492 2.99072 17.9992 2.99072H5.99916ZM7.40516 4.99173H16.5931L15.1871 8.99372H8.81214L7.40516 4.99173ZM5.84315 6.55472L6.71815 8.99372H4.62416L5.84315 6.55472ZM18.1552 6.55472L19.3742 8.99372H17.2802L18.1552 6.55472ZM5.12416 10.9937H7.40516L9.15516 15.9337L5.12416 10.9937ZM9.53016 10.9937H14.4681L11.9992 17.9977L9.53016 10.9937ZM16.5931 10.9937H18.8742C17.9162 12.1647 16.5261 13.8797 14.8431 15.9337L16.5931 10.9937Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Поинты/Вывод</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="withdrawal.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.01367 3.9978C3.35667 3.9978 2.01367 5.3408 2.01367 6.9978V16.9978C2.01367 18.6548 3.35667 19.9978 5.01367 19.9978H19.0137C20.6707 19.9978 22.0137 18.6548 22.0137 16.9978V6.9978C22.0137 5.3408 20.6707 3.9978 19.0137 3.9978H5.01367ZM5.01367 5.9978H19.0137C19.5657 5.9978 20.0137 6.4458 20.0137 6.9978V13.9978H4.01367V6.9978C4.01367 6.4458 4.46167 5.9978 5.01367 5.9978ZM15.0137 7.9978C14.4617 7.9978 14.0137 8.4458 14.0137 8.9978C14.0137 9.5498 14.4617 9.9978 15.0137 9.9978H17.0137C17.5657 9.9978 18.0137 9.5498 18.0137 8.9978C18.0137 8.4458 17.5657 7.9978 17.0137 7.9978H15.0137ZM4.01367 15.9978H20.0137V16.9978C20.0137 17.5498 19.5657 17.9978 19.0137 17.9978H5.01367C4.46167 17.9978 4.01367 17.5498 4.01367 16.9978V15.9978Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">История операций</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="settings.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M8.96802 2.45522C7.55002 2.90522 6.32702 3.63923 5.24902 4.64323C4.91602 4.95323 4.81403 5.46123 5.03003 5.86123C5.83103 7.34223 4.99302 8.92723 3.18602 9.01823C2.74402 9.04023 2.35302 9.36823 2.24902 9.79923C2.07002 10.5442 1.99902 11.1682 1.99902 11.9862C1.99902 12.6732 2.07302 13.4512 2.21802 14.1432C2.30802 14.5752 2.68402 14.8862 3.12402 14.9242C4.94202 15.0812 5.84203 16.4682 5.03003 18.2362C4.85003 18.6292 4.93202 19.0992 5.24902 19.3932C6.31102 20.3752 7.53102 21.0682 8.96802 21.5182C9.37802 21.6462 9.84102 21.4912 10.093 21.1432C11.205 19.6042 12.818 19.5992 13.874 21.1432C14.123 21.5062 14.579 21.6812 14.999 21.5492C16.386 21.1122 17.678 20.3692 18.749 19.3932C19.079 19.0922 19.166 18.6052 18.968 18.2052C18.136 16.5262 19.093 14.9852 20.811 14.9552C21.267 14.9472 21.673 14.6482 21.78 14.2052C21.953 13.4882 21.999 12.8642 21.999 11.9862C21.999 11.2322 21.91 10.4892 21.749 9.76823C21.647 9.31123 21.248 8.98723 20.78 8.98623C19.089 8.98323 18.141 7.32123 18.968 5.86123C19.198 5.45523 19.126 4.95723 18.78 4.64323C17.69 3.65323 16.361 2.87922 14.968 2.45522C14.54 2.32522 14.085 2.48523 13.843 2.86123C12.877 4.36223 11.073 4.38823 10.124 2.89323C9.88102 2.50923 9.40002 2.31822 8.96802 2.45522ZM15.046 4.57923C15.729 4.86523 16.268 5.16423 16.887 5.63323C16.161 7.93023 17.392 10.3162 19.942 10.8972C20.005 11.3102 19.999 11.5602 19.999 11.9862C19.999 12.4952 20.006 12.6742 19.948 13.0422C17.409 13.5682 16.153 15.8872 16.86 18.3382C16.252 18.7792 15.817 19.0852 15.054 19.3802C13.262 17.5562 10.774 17.4762 8.94403 19.3922C8.23003 19.0782 7.68104 18.7992 7.12604 18.3302C7.81404 15.8412 6.65103 13.6922 4.06903 13.0402C3.95403 12.5842 4.00002 11.2962 4.06602 10.9052C6.73602 10.2652 7.78803 7.90223 7.12503 5.62623C7.71103 5.18523 8.23803 4.86423 8.92303 4.58623C10.648 6.34123 13.238 6.51623 15.046 4.57923ZM11.999 7.98623C9.79002 7.98623 7.99902 9.77723 7.99902 11.9862C7.99902 14.1962 9.79002 15.9862 11.999 15.9862C14.208 15.9862 15.999 14.1962 15.999 11.9862C15.999 9.77723 14.208 7.98623 11.999 7.98623ZM11.999 9.98623C13.104 9.98623 13.999 10.8822 13.999 11.9862C13.999 13.0912 13.104 13.9862 11.999 13.9862C10.894 13.9862 9.99902 13.0912 9.99902 11.9862C9.99902 10.8822 10.894 9.98623 11.999 9.98623Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Настройки</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item">
+									<a href="tickets.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M7.99072 1.99805C7.43842 1.99805 6.99072 2.44605 6.99072 2.99805C4.78162 2.99805 2.99072 4.78905 2.99072 6.99805V16.998C2.99072 19.207 4.78162 20.998 6.99072 20.998H16.9907C19.1997 20.998 20.9907 19.207 20.9907 16.998V6.99805C20.9907 4.78905 19.1997 2.99805 16.9907 2.99805C16.9907 2.44605 16.5427 1.99805 15.9907 1.99805C15.4387 1.99805 14.9907 2.44605 14.9907 2.99805H11.9907H8.99072C8.99072 2.44605 8.54302 1.99805 7.99072 1.99805ZM6.99072 4.99805C6.99072 5.39005 6.99072 5.82405 6.99072 5.99805C6.99072 7.68705 8.48482 8.99805 10.2717 8.99805H13.7097C15.4967 8.99805 16.9907 7.68705 16.9907 5.99805C16.9907 5.82405 16.9907 5.41605 16.9907 4.99805C18.0957 4.99805 18.9907 5.89305 18.9907 6.99805V16.998C18.9907 18.103 18.0957 18.998 16.9907 18.998H6.99072C5.88612 18.998 4.99072 18.103 4.99072 16.998V6.99805C4.99072 5.89305 5.88612 4.99805 6.99072 4.99805ZM8.99072 4.99805H11.9907H14.9907C14.9907 5.41605 14.9907 5.82405 14.9907 5.99805C14.9907 6.51805 14.4467 6.99805 13.7097 6.99805H10.2717C9.53442 6.99805 8.99072 6.51805 8.99072 5.99805C8.99072 5.82405 8.99072 5.39005 8.99072 4.99805ZM11.9907 10.998C11.4387 10.998 10.9907 11.446 10.9907 11.998V12.998H9.99072C9.43842 12.998 8.99072 13.446 8.99072 13.998C8.99072 14.55 9.43842 14.998 9.99072 14.998H10.9907V15.998C10.9907 16.55 11.4387 16.998 11.9907 16.998C12.5427 16.998 12.9907 16.55 12.9907 15.998V14.998H13.9907C14.5427 14.998 14.9907 14.55 14.9907 13.998C14.9907 13.446 14.5427 12.998 13.9907 12.998H12.9907V11.998C12.9907 11.446 12.5427 10.998 11.9907 10.998Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Тикеты</div>
+									</a>
+								</li>
+								<li class="navigation-aside__item navigation-aside__item_vote">
+									<a href="vote.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.0137 1.99902C6.49067 1.99902 2.01367 6.47602 2.01367 11.999C2.01367 17.522 6.49067 21.999 12.0137 21.999C17.0937 21.999 21.3577 18.191 21.9517 13.187C22.0157 12.638 21.6246 12.127 21.0756 12.061C20.5277 11.997 20.0157 12.388 19.9517 12.937C19.4767 16.937 16.0777 19.999 12.0137 19.999C7.59567 19.999 4.01367 16.417 4.01367 11.999C4.01367 7.58101 7.59567 3.99902 12.0137 3.99902C12.9367 3.99902 13.8507 4.16601 14.7017 4.46801C15.2217 4.65201 15.7667 4.36301 15.9517 3.84301C16.1357 3.32202 15.8777 2.74603 15.3577 2.56103C14.2937 2.18403 13.1647 1.99902 12.0137 1.99902ZM21.0137 3.99902C20.7577 3.99902 20.4897 4.08903 20.2947 4.28003L11.5757 12.874C11.3187 13.127 11.0597 13.078 10.8577 12.78L9.85766 11.311C9.55166 10.86 8.90967 10.729 8.45167 11.03C7.99267 11.331 7.86367 11.954 8.16967 12.405L9.16967 13.874C10.0707 15.203 11.8337 15.379 12.9827 14.249L21.7326 5.68701C22.1226 5.30301 22.1226 4.66403 21.7326 4.28003C21.5376 4.08803 21.2697 3.99902 21.0137 3.99902Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">
+											Голосование
+											<span>3</span>
+										</div>
+									</a>
+								</li>
+
+								<li class="navigation-aside__item">
+									<a href="index.html" class="navigation-aside__link">
+										<div class="navigation-aside__icon">
+											<span>
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.4343 2.06599L6.99731 3.87849C6.43131 4.06699 6.02832 4.62589 6.02832 5.22219V19.9097H5.02832C4.47632 19.9097 4.02832 20.3574 4.02832 20.9097C4.02832 21.462 4.47632 21.9097 5.02832 21.9097H17.0283H19.0283C19.5803 21.9097 20.0283 21.462 20.0283 20.9097C20.0283 20.3574 19.5803 19.9097 19.0283 19.9097H18.0283V5.90969C18.0283 4.25279 16.6853 2.90969 15.0283 2.90969L13.9883 2.91288C13.8433 2.20348 13.1133 1.83959 12.4343 2.06599ZM12.0283 4.31599C12.0283 5.21589 12.0283 8.09189 12.0283 10.9097C11.4763 10.9097 11.0283 11.3574 11.0283 11.9097C11.0283 12.462 11.4763 12.9097 12.0283 12.9097C12.0283 15.9217 12.0283 19.0136 12.0283 19.9097H8.02832V5.65969L12.0283 4.31599ZM14.0283 4.90969H15.0283C15.5803 4.90969 16.0283 5.35739 16.0283 5.90969V19.9097H14.0283C14.0283 17.9905 14.0283 7.72499 14.0283 4.90969Z" fill="#7A808A" />
+												</svg>
+											</span>
+										</div>
+										<div class="navigation-aside__name">Выход</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="cabinet__main main-cabinet">
+					<div class="main-cabinet__statistics statistics">
+						<div class="statistics__header header-cabinet">
+							<div class="header-cabinet__burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="header-cabinet__main">
+								<h2 data-popup="#new-deposit" class="header-cabinet__title">Статистика</h2>
+								<div class="header-cabinet__image _ibg">
+									<img src="img/test.png" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="statistics__body">
+							<div class="statistics__column">
+								<div class="statistics__block block-statistics">
+									<div class="block-statistics__common-info">
+										<div class="block-statistics__header header-prizes">
+											По Отзывам
+										</div>
+										<div class="block-statistics__body">
+											<h3 class="block-statistics__title">Общая информация</h3>
+											<div class="block-statistics__common-statistics common-statistics">
+												<div class="common-statistics__item">
+													<div class="common-statistics__icon">
+														<span>
+															<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.6651 1.42578C7.58426 1.42578 8.77206 1.93365 9.18467 3.35173C9.2776 3.67119 9.31868 4.02677 9.33958 4.41423C9.36175 4.82577 9.34355 5.23944 9.30324 5.66374L12.0401 5.67578C13.2137 5.67578 14.1651 6.62707 14.1651 7.80077C14.1651 8.31927 13.9386 8.82006 13.5943 9.20114C13.9584 9.58293 14.1651 10.0653 14.1651 10.6341C14.1651 11.2135 13.8654 11.7766 13.4429 12.1733C13.4429 12.3469 13.4568 12.6486 13.4568 12.7591C13.4568 14.0617 12.7982 14.8969 11.6417 15.2822C10.876 15.5379 10.1772 15.5924 8.49843 15.5924C5.27389 15.5924 2.83177 13.1501 2.83177 9.92577C2.83177 8.31573 3.11886 7.40341 3.96071 5.7197C4.71261 4.21591 4.95677 3.4757 4.95677 2.13411C4.95677 1.74311 5.27389 1.42578 5.6651 1.42578ZM6.34829 2.87148C6.24941 4.00268 5.9252 4.97877 5.24449 6.34018C4.4926 7.84397 4.24844 8.58419 4.24844 9.92577C4.24844 12.3681 6.05631 14.1758 8.49843 14.1758C11.2966 14.1758 12.0401 13.9278 12.0401 12.7591C11.9313 12.7591 11.4208 12.7591 11.3318 12.7591C10.9406 12.7591 10.6234 12.4418 10.6234 12.0508C10.6234 11.6598 10.9406 11.3424 11.3318 11.3424C11.4208 11.3424 11.9313 11.3424 12.0401 11.3424C12.3632 11.3424 12.7484 10.9599 12.7484 10.6341C12.7484 10.2431 12.4313 9.92577 12.0401 9.92577C11.9355 9.92577 11.4206 9.92577 11.3318 9.92577C10.9406 9.92577 10.6234 9.60844 10.6234 9.21744C10.6234 8.82644 10.9406 8.50911 11.3318 8.50911C11.4206 8.50911 11.9355 8.50911 12.0401 8.50911C12.3688 8.50911 12.7484 8.1344 12.7484 7.80077C12.7484 7.40977 12.4313 7.09244 12.0401 7.09244H8.49843C8.46606 7.09244 8.17891 7.09031 7.94508 6.80485C7.71119 6.51869 7.80923 6.26653 7.8122 6.25095C7.82743 6.17303 7.85371 6.03135 7.87864 5.8309C7.93474 5.37969 7.94544 4.92069 7.92291 4.50277C7.90747 4.2159 7.87191 3.95524 7.8122 3.74982C7.66267 3.23557 7.22776 2.91894 6.34829 2.87148Z" fill="white" />
+															</svg>
+														</span>
+													</div>
+													<h4 class="common-statistics__name">Положительных</h4>
+													<div class="common-statistics__value">137</div>
+												</div>
+												<div class="common-statistics__item common-statistics__item_neutral">
+													<div class="common-statistics__icon">
+														<span>
+															<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M8.51003 1.41602C4.59789 1.41602 1.42668 4.58722 1.42668 8.49935C1.42668 12.4115 4.59789 15.5827 8.51003 15.5827C12.4222 15.5827 15.5934 12.4115 15.5934 8.49935C15.5934 4.58722 12.4222 1.41602 8.51003 1.41602ZM8.51003 2.83268C11.6394 2.83268 14.1767 5.36993 14.1767 8.49935C14.1767 11.6288 11.6394 14.166 8.51003 14.166C5.3806 14.166 2.84335 11.6288 2.84335 8.49935C2.84335 5.36993 5.3806 2.83268 8.51003 2.83268ZM6.38502 6.37435C5.99402 6.37435 5.67669 6.69168 5.67669 7.08268V7.79102C5.67669 8.18202 5.99402 8.49935 6.38502 8.49935C6.77602 8.49935 7.09336 8.18202 7.09336 7.79102V7.08268C7.09336 6.69168 6.77602 6.37435 6.38502 6.37435ZM10.635 6.37435C10.244 6.37435 9.92669 6.69168 9.92669 7.08268V7.79102C9.92669 8.18202 10.244 8.49935 10.635 8.49935C11.026 8.49935 11.3434 8.18202 11.3434 7.79102V7.08268C11.3434 6.69168 11.026 6.37435 10.635 6.37435ZM6.38502 9.91602C5.99402 9.91602 5.67669 10.2333 5.67669 10.6243C5.67669 11.0153 5.99402 11.3327 6.38502 11.3327H10.635C11.026 11.3327 11.3434 11.0153 11.3434 10.6243C11.3434 10.2333 11.026 9.91602 10.635 9.91602H6.38502Z" fill="white" />
+															</svg>
+														</span>
+													</div>
+													<h4 class="common-statistics__name">Нейтральных</h4>
+													<div class="common-statistics__value">29</div>
+												</div>
+												<div class="common-statistics__item common-statistics__item_negative">
+													<div class="common-statistics__icon">
+														<span>
+															<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M5.66512 15.5742C7.58427 15.5742 8.77208 15.0663 9.18468 13.6483C9.27762 13.3288 9.3187 12.9732 9.3396 12.5858C9.36177 12.1742 9.34356 11.7606 9.30326 11.3363L12.0401 11.3242C13.2138 11.3242 14.1651 10.3729 14.1651 9.19923C14.1651 8.68073 13.9387 8.17994 13.5943 7.79886C13.9584 7.41707 14.1651 6.93469 14.1651 6.3659C14.1651 5.78648 13.8654 5.22335 13.4429 4.82669C13.4429 4.65315 13.4568 4.3514 13.4568 4.2409C13.4568 2.93828 12.7982 2.10314 11.6417 1.71781C10.876 1.4621 10.1772 1.40757 8.49845 1.40757C5.2739 1.40757 2.83178 3.8499 2.83178 7.07423C2.83178 8.68427 3.11887 9.59659 3.96073 11.2803C4.71262 12.7841 4.95678 13.5243 4.95678 14.8659C4.95678 15.2569 5.2739 15.5742 5.66512 15.5742ZM6.3483 14.1285C6.24942 12.9973 5.92522 12.0212 5.24451 10.6598C4.49261 9.15603 4.24845 8.41581 4.24845 7.07423C4.24845 4.6319 6.05633 2.82423 8.49845 2.82423C11.2966 2.82423 12.0401 3.07215 12.0401 4.2409C11.9313 4.2409 11.4208 4.2409 11.3318 4.2409C10.9406 4.2409 10.6234 4.55823 10.6234 4.94923C10.6234 5.34023 10.9406 5.65757 11.3318 5.65757C11.4208 5.65757 11.9313 5.65757 12.0401 5.65757C12.3632 5.65757 12.7484 6.04006 12.7484 6.3659C12.7484 6.7569 12.4313 7.07423 12.0401 7.07423C11.9355 7.07423 11.4206 7.07423 11.3318 7.07423C10.9406 7.07423 10.6234 7.39156 10.6234 7.78256C10.6234 8.17356 10.9406 8.49089 11.3318 8.49089C11.4206 8.49089 11.9355 8.49089 12.0401 8.49089C12.3688 8.49089 12.7484 8.8656 12.7484 9.19923C12.7484 9.59023 12.4313 9.90756 12.0401 9.90756H8.49845C8.46608 9.90756 8.17892 9.90969 7.9451 10.1951C7.71121 10.4813 7.80924 10.7335 7.81222 10.7491C7.82745 10.827 7.85372 10.9686 7.87866 11.1691C7.93476 11.6203 7.94545 12.0793 7.92293 12.4972C7.90749 12.7841 7.87193 13.0448 7.81222 13.2502C7.66269 13.7644 7.22777 14.0811 6.3483 14.1285Z" fill="white" />
+															</svg>
+														</span>
+													</div>
+													<h4 class="common-statistics__name">Негативных</h4>
+													<div class="common-statistics__value">5</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="block-statistics__feedback">
+										<div class="block-statistics__body">
+											<h3 class="block-statistics__title">Все отзывы</h3>
+											<div class="block-statistics__reviews reviews-statistics">
+												<div data-tabs class="reviews-statistics__tabs">
+													<nav data-tabs-titles class="reviews-statistics__navigation">
+														<button type="button" class="reviews-statistics__trigger _tab-active">
+															<span>Положительные</span>
+														</button>
+														<button type="button" class="reviews-statistics__trigger">
+															<span>Нейтральные</span>
+														</button>
+														<button type="button" class="reviews-statistics__trigger">
+															<span>Негативные</span>
+														</button>
+													</nav>
+													<div data-tabs-body class="reviews-statistics__content">
+														<div class="reviews-statistics__body">
+															<div class="reviews-statistics__items">
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+															</div>
+															<div class="reviews-statistics__pagination pagination">
+																<ul class="pagination__list">
+																	<li class="pagination__item disabled">
+																		<a href="#" class="pagination__link">1</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">2</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">3</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">...</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">20</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="reviews-statistics__body">
+															<div class="reviews-statistics__items reviews-statistics__items_neutral">
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+															</div>
+															<div class="reviews-statistics__pagination pagination">
+																<ul class="pagination__list">
+																	<li class="pagination__item disabled">
+																		<a href="#" class="pagination__link">1</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">2</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">3</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">...</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">20</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="reviews-statistics__body">
+															<div class="reviews-statistics__items reviews-statistics__items_negative">
+																<div class="reviews-statistics__item item-reviews-statistics">
+																	<div class="item-reviews-statistics__head">
+																		<div class="item-reviews-statistics__avatar">
+																			<img src="img/main/reviews/avatar-1.png" alt="avatar">
+																		</div>
+																		<div class="item-reviews-statistics__name">Clara Stephens</div>
+																	</div>
+																	<div class="item-reviews-statistics__review">
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum pulvinar pellentesque lacinia semper non lectus. Auctor dui tellus tempus, molestie egestas elementum, maecenas. Id sed aenean tortor euismod....
+																	</div>
+																</div>
+															</div>
+															<div class="reviews-statistics__pagination pagination">
+																<ul class="pagination__list">
+																	<li class="pagination__item disabled">
+																		<a href="#" class="pagination__link">1</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">2</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">3</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">...</a>
+																	</li>
+																	<li class="pagination__item">
+																		<a href="#" class="pagination__link">20</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="statistics__column">
+								<div class="statistics__block block-statistics">
+									<div class="block-statistics__score">
+										<div class="block-statistics__header header-prizes">
+											По Казино
+										</div>
+										<div class="block-statistics__body">
+											<h3 class="block-statistics__title">Общая оценка казино</h3>
+											<div class="block-statistics__overall-score overall-score">
+												<div class="overall-score__casino">
+													<div class="overall-score__logo">
+														<div class="overall-score__logo-wrapper">
+															<img src="img/main/home/casino-logo.svg" alt="Logo">
+														</div>
+													</div>
+													<div class="overall-score__info">
+														<div class="overall-score__sub-title">Рейтинг</div>
+														<div class="overall-score__value">
+															6.7 / 10
+														</div>
+													</div>
+												</div>
+												<div class="overall-score__statistics">
+													<h3 class="overall-score__title">Всего проголосовало: <span>251 пользователя</span></h3>
+													<div class="overall-score__items">
+														<div class="overall-score__item item-overall-score">
+															<div class="item-overall-score__head">
+																<div class="item-overall-score__icon">
+																	<span>
+																		<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M5.6651 1.42578C7.58426 1.42578 8.77206 1.93365 9.18467 3.35173C9.2776 3.67119 9.31868 4.02677 9.33958 4.41423C9.36175 4.82577 9.34355 5.23944 9.30324 5.66374L12.0401 5.67578C13.2137 5.67578 14.1651 6.62707 14.1651 7.80077C14.1651 8.31927 13.9386 8.82006 13.5943 9.20114C13.9584 9.58293 14.1651 10.0653 14.1651 10.6341C14.1651 11.2135 13.8654 11.7766 13.4429 12.1733C13.4429 12.3469 13.4568 12.6486 13.4568 12.7591C13.4568 14.0617 12.7982 14.8969 11.6417 15.2822C10.876 15.5379 10.1772 15.5924 8.49843 15.5924C5.27389 15.5924 2.83177 13.1501 2.83177 9.92577C2.83177 8.31573 3.11886 7.40341 3.96071 5.7197C4.71261 4.21591 4.95677 3.4757 4.95677 2.13411C4.95677 1.74311 5.27389 1.42578 5.6651 1.42578ZM6.34829 2.87148C6.24941 4.00268 5.9252 4.97877 5.24449 6.34018C4.4926 7.84397 4.24844 8.58419 4.24844 9.92577C4.24844 12.3681 6.05631 14.1758 8.49843 14.1758C11.2966 14.1758 12.0401 13.9278 12.0401 12.7591C11.9313 12.7591 11.4208 12.7591 11.3318 12.7591C10.9406 12.7591 10.6234 12.4418 10.6234 12.0508C10.6234 11.6598 10.9406 11.3424 11.3318 11.3424C11.4208 11.3424 11.9313 11.3424 12.0401 11.3424C12.3632 11.3424 12.7484 10.9599 12.7484 10.6341C12.7484 10.2431 12.4313 9.92577 12.0401 9.92577C11.9355 9.92577 11.4206 9.92577 11.3318 9.92577C10.9406 9.92577 10.6234 9.60844 10.6234 9.21744C10.6234 8.82644 10.9406 8.50911 11.3318 8.50911C11.4206 8.50911 11.9355 8.50911 12.0401 8.50911C12.3688 8.50911 12.7484 8.1344 12.7484 7.80077C12.7484 7.40977 12.4313 7.09244 12.0401 7.09244H8.49843C8.46606 7.09244 8.17891 7.09031 7.94508 6.80485C7.71119 6.51869 7.80923 6.26653 7.8122 6.25095C7.82743 6.17303 7.85371 6.03135 7.87864 5.8309C7.93474 5.37969 7.94544 4.92069 7.92291 4.50277C7.90747 4.2159 7.87191 3.95524 7.8122 3.74982C7.66267 3.23557 7.22776 2.91894 6.34829 2.87148Z" fill="white" />
+																		</svg>
+																	</span>
+																</div>
+																<div class="item-overall-score__rate">Высокая оценка</div>
+															</div>
+															<div class="item-overall-score__value">8 баллов</div>
+														</div>
+														<div class="overall-score__item item-overall-score item-overall-score_neutral">
+															<div class="item-overall-score__head">
+																<div class="item-overall-score__icon">
+																	<span>
+																		<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M8.51004 1.41602C4.59791 1.41602 1.4267 4.58722 1.4267 8.49935C1.4267 12.4115 4.59791 15.5827 8.51004 15.5827C12.4222 15.5827 15.5934 12.4115 15.5934 8.49935C15.5934 4.58722 12.4222 1.41602 8.51004 1.41602ZM8.51004 2.83268C11.6395 2.83268 14.1767 5.36993 14.1767 8.49935C14.1767 11.6288 11.6395 14.166 8.51004 14.166C5.38062 14.166 2.84337 11.6288 2.84337 8.49935C2.84337 5.36993 5.38062 2.83268 8.51004 2.83268ZM6.38504 6.37435C5.99404 6.37435 5.6767 6.69168 5.6767 7.08268V7.79102C5.6767 8.18202 5.99404 8.49935 6.38504 8.49935C6.77604 8.49935 7.09337 8.18202 7.09337 7.79102V7.08268C7.09337 6.69168 6.77604 6.37435 6.38504 6.37435ZM10.635 6.37435C10.244 6.37435 9.92671 6.69168 9.92671 7.08268V7.79102C9.92671 8.18202 10.244 8.49935 10.635 8.49935C11.026 8.49935 11.3434 8.18202 11.3434 7.79102V7.08268C11.3434 6.69168 11.026 6.37435 10.635 6.37435ZM6.38504 9.91602C5.99404 9.91602 5.6767 10.2333 5.6767 10.6243C5.6767 11.0153 5.99404 11.3327 6.38504 11.3327H10.635C11.026 11.3327 11.3434 11.0153 11.3434 10.6243C11.3434 10.2333 11.026 9.91602 10.635 9.91602H6.38504Z" fill="white" />
+																		</svg>
+																	</span>
+																</div>
+																<div class="item-overall-score__rate">Средняя оценка</div>
+															</div>
+															<div class="item-overall-score__value">5 баллов</div>
+														</div>
+														<div class="overall-score__item item-overall-score item-overall-score_negative">
+															<div class="item-overall-score__head">
+																<div class="item-overall-score__icon">
+																	<span>
+																		<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path d="M5.66516 15.5742C7.58432 15.5742 8.77212 15.0663 9.18473 13.6483C9.27766 13.3288 9.31875 12.9732 9.33964 12.5858C9.36181 12.1742 9.34361 11.7606 9.3033 11.3363L12.0402 11.3242C13.2138 11.3242 14.1652 10.3729 14.1652 9.19923C14.1652 8.68073 13.9387 8.17994 13.5943 7.79886C13.9585 7.41707 14.1652 6.93469 14.1652 6.3659C14.1652 5.78648 13.8655 5.22335 13.4429 4.82669C13.4429 4.65315 13.4568 4.3514 13.4568 4.2409C13.4568 2.93828 12.7982 2.10314 11.6417 1.71781C10.8761 1.4621 10.1772 1.40757 8.4985 1.40757C5.27395 1.40757 2.83183 3.8499 2.83183 7.07423C2.83183 8.68427 3.11892 9.59659 3.96077 11.2803C4.71267 12.7841 4.95683 13.5243 4.95683 14.8659C4.95683 15.2569 5.27395 15.5742 5.66516 15.5742ZM6.34835 14.1285C6.24947 12.9973 5.92526 12.0212 5.24455 10.6598C4.49266 9.15603 4.2485 8.41581 4.2485 7.07423C4.2485 4.6319 6.05638 2.82423 8.4985 2.82423C11.2966 2.82423 12.0402 3.07215 12.0402 4.2409C11.9314 4.2409 11.4209 4.2409 11.3318 4.2409C10.9406 4.2409 10.6235 4.55823 10.6235 4.94923C10.6235 5.34023 10.9406 5.65757 11.3318 5.65757C11.4209 5.65757 11.9314 5.65757 12.0402 5.65757C12.3632 5.65757 12.7485 6.04006 12.7485 6.3659C12.7485 6.7569 12.4314 7.07423 12.0402 7.07423C11.9355 7.07423 11.4207 7.07423 11.3318 7.07423C10.9406 7.07423 10.6235 7.39156 10.6235 7.78256C10.6235 8.17356 10.9406 8.49089 11.3318 8.49089C11.4207 8.49089 11.9355 8.49089 12.0402 8.49089C12.3688 8.49089 12.7485 8.8656 12.7485 9.19923C12.7485 9.59023 12.4314 9.90756 12.0402 9.90756H8.4985C8.46612 9.90756 8.17897 9.90969 7.94515 10.1951C7.71125 10.4813 7.80929 10.7335 7.81226 10.7491C7.82749 10.827 7.85377 10.9686 7.8787 11.1691C7.9348 11.6203 7.9455 12.0793 7.92298 12.4972C7.90753 12.7841 7.87197 13.0448 7.81226 13.2502C7.66273 13.7644 7.22782 14.0811 6.34835 14.1285Z" fill="white" />
+																		</svg>
+																	</span>
+																</div>
+																<div class="item-overall-score__rate">Низкая оценка</div>
+															</div>
+															<div class="item-overall-score__value">2 баллов</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="block-statistics__percentage">
+										<div class="block-statistics__body">
+											<h3 class="block-statistics__title">В процентах</h3>
+											<div class="block-statistics__percentage-statistics percentage-statistics">
+												<div class="percentage-statistics__bar">
+													<canvas id="percentage-pie"></canvas>
+												</div>
+												<div class="percentage-statistics__items">
+													<div style="--pointColor: #C7D0FF" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">1 балл</div>
+														<div class="percentage-statistics__percent">2%</div>
+													</div>
+													<div style="--pointColor: #4B68FF" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">2 балла</div>
+														<div class="percentage-statistics__percent">1%</div>
+													</div>
+													<div style="--pointColor: #354AB5" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">3 балла</div>
+														<div class="percentage-statistics__percent">1%</div>
+													</div>
+													<div style="--pointColor: #202C6B" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">4 балла</div>
+														<div class="percentage-statistics__percent">6%</div>
+													</div>
+													<div style="--pointColor: #D04BFF" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">5 баллов</div>
+														<div class="percentage-statistics__percent">10%</div>
+													</div>
+													<div style="--pointColor: #AB35B5" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">6 баллов</div>
+														<div class="percentage-statistics__percent">8%</div>
+													</div>
+													<div style="--pointColor: #60206B" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">7 баллов</div>
+														<div class="percentage-statistics__percent">1%</div>
+													</div>
+													<div style="--pointColor: #4BBEFF" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">8 баллов</div>
+														<div class="percentage-statistics__percent">0%</div>
+													</div>
+													<div style="--pointColor: #3587B5" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">9 баллов</div>
+														<div class="percentage-statistics__percent">12%</div>
+													</div>
+													<div style="--pointColor: #246D97" class="percentage-statistics__item">
+														<div class="percentage-statistics__name">10 баллов</div>
+														<div class="percentage-statistics__percent">70%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="statistics__block block-statistics">
+									<div class="block-statistics__transitions">
+										<div class="block-statistics__header header-prizes">
+											Количество переходов на ваше казино
+											<span class="block-statistics__date">
+												10.10 - 5.11, 2023
+											</span>
+										</div>
+										<div class="block-statistics__body">
+											<div data-tabs class="block-statistics__tabs tabs-transitions">
+												<div class="tabs-transitions__head">
+													<div class="tabs-transitions__icon">
+														<span>
+															<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M8.78257 13.3751C9.04657 13.3278 9.3243 13.1951 9.59523 12.9791L13.9077 9.54177C14.9071 8.74443 14.9071 7.38042 13.9077 6.58376L9.59523 3.14577C8.51123 2.28176 7.32457 2.83977 7.32457 4.2291V5.41709C7.2239 5.41842 7.09123 5.41642 7.05323 5.41709C6.54657 5.42442 6.2159 5.41043 6.03257 5.39577C4.60323 5.2831 3.93856 5.0131 3.17856 4.31243C3.0779 4.21977 2.5279 3.64109 2.4699 3.58375C2.0499 3.16442 1.32456 3.4691 1.32456 4.06243C1.32456 4.14577 1.32456 4.7291 1.32456 4.7291C1.29323 8.4151 2.45256 10.4518 5.92856 10.7291C6.05123 10.7391 6.3979 10.7324 6.99123 10.7291C7.03257 10.7291 7.18257 10.7304 7.32457 10.7291C7.32457 11.2124 7.32457 11.7504 7.32457 11.8958C7.32457 12.9378 7.99057 13.5178 8.78257 13.3751ZM8.6579 12.0224L8.65723 9.40043C8.65723 9.40043 6.10057 9.4011 6.03257 9.39577C3.6719 9.21977 2.82256 8.10576 2.67256 5.60776C3.51923 6.26443 4.45123 6.61244 5.92856 6.7291C6.16856 6.74844 6.52257 6.75842 7.07457 6.75042C7.20657 6.74842 8.65723 6.73376 8.65723 6.73376L8.64723 4.09643L13.0744 7.6251C13.4045 7.88843 13.4045 8.23709 13.0744 8.50042L8.6579 12.0224Z" fill="white" />
+															</svg>
+														</span>
+													</div>
+													<nav data-tabs-titles class="tabs-transitions__navigation">
+														<button type="button" class="tabs-transitions__title _tab-active">Сегодня</button>
+														<button type="button" class="tabs-transitions__title">За неделю</button>
+														<button type="button" class="tabs-transitions__title">За месяц</button>
+														<button type="button" class="tabs-transitions__title">За 6 месяцев</button>
+														<button type="button" class="tabs-transitions__title">За год</button>
+													</nav>
+												</div>
+
+												<div data-tabs-body class="tabs-transitions__content">
+													<div class="tabs-transitions__body">
+														<div class="tabs-transitions__wrapper">
+															<div class="tabs-transitions__info">
+																<div class="tabs-transitions__name">Сегодня</div>
+																<div class="tabs-transitions__value">200</div>
+															</div>
+															<div class="tabs-transitions__progress progress-transitions">
+																<div class="progress-transitions__head">
+																	<div class="progress-transitions__start">0</div>
+																	<div class="progress-transitions__end">5000</div>
+																</div>
+																<div class="progress-transitions__progressbar">
+																	<div style="width: 40%" class="progress-transitions__line"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-transitions__body">
+														<div class="tabs-transitions__wrapper">
+															<div class="tabs-transitions__info">
+																<div class="tabs-transitions__name">Сегодня</div>
+																<div class="tabs-transitions__value">200</div>
+															</div>
+															<div class="tabs-transitions__progress progress-transitions">
+																<div class="progress-transitions__head">
+																	<div class="progress-transitions__start">0</div>
+																	<div class="progress-transitions__end">5000</div>
+																</div>
+																<div class="progress-transitions__progressbar">
+																	<div style="width: 40%" class="progress-transitions__line"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-transitions__body">
+														<div class="tabs-transitions__wrapper">
+															<div class="tabs-transitions__info">
+																<div class="tabs-transitions__name">Сегодня</div>
+																<div class="tabs-transitions__value">200</div>
+															</div>
+															<div class="tabs-transitions__progress progress-transitions">
+																<div class="progress-transitions__head">
+																	<div class="progress-transitions__start">0</div>
+																	<div class="progress-transitions__end">5000</div>
+																</div>
+																<div class="progress-transitions__progressbar">
+																	<div style="width: 40%" class="progress-transitions__line"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-transitions__body">
+														<div class="tabs-transitions__wrapper">
+															<div class="tabs-transitions__info">
+																<div class="tabs-transitions__name">Сегодня</div>
+																<div class="tabs-transitions__value">200</div>
+															</div>
+															<div class="tabs-transitions__progress progress-transitions">
+																<div class="progress-transitions__head">
+																	<div class="progress-transitions__start">0</div>
+																	<div class="progress-transitions__end">5000</div>
+																</div>
+																<div class="progress-transitions__progressbar">
+																	<div style="width: 40%" class="progress-transitions__line"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-transitions__body">
+														<div class="tabs-transitions__wrapper">
+															<div class="tabs-transitions__info">
+																<div class="tabs-transitions__name">Сегодня</div>
+																<div class="tabs-transitions__value">200</div>
+															</div>
+															<div class="tabs-transitions__progress progress-transitions">
+																<div class="progress-transitions__head">
+																	<div class="progress-transitions__start">0</div>
+																	<div class="progress-transitions__end">5000</div>
+																</div>
+																<div class="progress-transitions__progressbar">
+																	<div style="width: 40%" class="progress-transitions__line"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	</div>
+
+
+	<div id="bonus" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content statistics-popup">
+				<div class="statistics-popup__icon">
+					<img src="img/cabinet/statistics/tick-circle.svg" alt="Icon">
+				</div>
+				<h2 class="statistics-popup__title">Поздравляем</h2>
+				<h3 class="statistics-popup__sub-title">Вы успешно зарегистрированы и получили бонус</h3>
+				<div class="statistics-popup__body">
+					<div class="statistics-popup__bonus bonus-statistics-popup">
+						<div class="bonus-statistics-popup__info">
+							<div class="bonus-statistics-popup__icon">
+								<img src="img/cabinet/statistics/bonus-popup-icon.png" alt="Coins">
+							</div>
+							<div class="bonus-statistics-popup__value">
+								<span>+100</span> поинтов за регистрацию
+							</div>
+						</div>
+						<div class="bonus-statistics-popup__check">
+							<span>
+								<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.32747 0C5.15747 0 4.97945 0.0554857 4.84945 0.181288L2.37604 2.60056C2.2047 2.767 2.03269 2.73603 1.89802 2.54055L1.23334 1.57284C1.02934 1.27608 0.603314 1.19351 0.297971 1.39092C-0.00737256 1.58898 -0.0927126 2.00187 0.110627 2.29799L0.775993 3.2657C1.37601 4.13922 2.54672 4.25017 3.31141 3.50826L5.80549 1.10899C6.06484 0.85674 6.06484 0.433537 5.80549 0.181288C5.67549 0.0554857 5.49748 0 5.32747 0Z" fill="white" />
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+				<button type="button" data-close class="statistics-popup__close">
+					Закрыть
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="new-status" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content statistics-popup statistics-popup_new-status">
+				<div class="statistics-popup__icon">
+					<img src="img/cabinet/statistics/tick-circle.svg" alt="Icon">
+				</div>
+				<h2 class="statistics-popup__title">Поздравляем</h2>
+				<h3 class="statistics-popup__sub-title">Вы получили новый статус на форуме</h3>
+				<div class="statistics-popup__body">
+					<div class="statistics-popup__bonus new-status">
+						<div class="new-status__wrapper">
+							<div class="new-status__icon">
+								<img src="img/cabinet/status/rank-3.png" alt="Rank">
+							</div>
+							<div class="new-status__value">Игрок</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" data-close class="statistics-popup__close">
+					Закрыть
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="new-deposit" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content statistics-popup">
+				<div class="statistics-popup__icon">
+					<img src="img/cabinet/statistics/tick-circle.svg" alt="Icon">
+				</div>
+				<h2 class="statistics-popup__title">Выполнена успешно</h2>
+				<h3 class="statistics-popup__sub-title">Вы открыли депозит на</h3>
+				<div class="statistics-popup__body">
+					<div class="statistics-popup__bonus new-deposit">
+						<div class="new-deposit__info">
+							<div class="new-deposit__icon">
+								<img src="img/cabinet/statistics/bonus-popup-icon.png" alt="Coin">
+							</div>
+							<div class="new-deposit__value">
+								100 поинтов под <span>х1.1</span>
+							</div>
+						</div>
+						<div class="new-deposit__days">
+							<span>на 5 дней</span>
+						</div>
+					</div>
+				</div>
+				<div class="statistics-popup__buttons">
+					<a href="deposit.html" class="statistics-popup__my-deposits">
+						Мои депозиты
+					</a>
+					<button type="button" data-close class="statistics-popup__close statistics-popup__close_white">
+						Закрыть
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20230622155754"></script>
+</body>
+
+</html>
